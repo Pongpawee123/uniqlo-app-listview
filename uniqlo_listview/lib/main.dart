@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipes/Model/recipe.dart';
-import 'package:recipes/recipe_detail.dart';
+import 'package:uniqlo_listview/Model/uniqlo.dart';
+import 'package:uniqlo_listview/uniqlo_detail.dart';
  
 void main() {
   runApp(const UniqloApp());
@@ -17,7 +17,7 @@ class UniqloApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const MyHomePage(title: 'Uniqlo Calculator'),
+      home: const MyHomePage(title: 'Uniqlo Shop'),
     );
   }
 }
@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
    
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
+      appBar: AppBar(backgroundColor: Colors.blue, foregroundColor: Colors.white, title: Text(widget.title)),
       body: SafeArea(child: Container(
               child: ListView.builder(
                 itemBuilder: (BuildContext context, int index) {
